@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.kunkun.sh",
-  "name": "kunkun-ext-download-twitter-video",
-  "version": "0.0.9",
+  "name": "kunkun-ext-down-x-video",
+  "version": "0.0.10",
   "type": "module",
   "repository": "https://github.com/kunkunsh/kunkun-ext-download-twitter-video",
   "kunkun": {
