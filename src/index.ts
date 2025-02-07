@@ -7,8 +7,8 @@ import {
 	toast,
 	ui,
 	updownload,
-	WorkerExtension
-} from "@kksh/api/ui/worker"
+	TemplateUiCommand
+} from "@kksh/api/ui/template"
 
 async function handleDownload(username: string, tweetID: string) {
 	const APIResponse = await fetch(`https://api.vxtwitter.com/${username}/status/${tweetID}`).then(
@@ -31,7 +31,7 @@ async function handleDownload(username: string, tweetID: string) {
 	)
 }
 
-class ExtensionTemplate extends WorkerExtension {
+class ExtensionTemplate extends TemplateUiCommand {
 	async onFormSubmit(value: { url: string }): Promise<void> {
 		console.log("Form submitted", value)
 		// value.
